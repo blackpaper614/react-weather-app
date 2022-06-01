@@ -1,0 +1,188 @@
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 375px;
+  padding: 50px 16px 0px;
+  height: 90vh;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  border: 1px solid #ffffff;
+  border-radius: 40px;
+  position: relative;
+  .header {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    .app-logo {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  .menu-bar {
+    width: 343px;
+    height: 64px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 20px;
+    padding: 13px 34px;
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    .nav-icon {
+      width: 30px;
+      height: 38px;
+    }
+  }
+  .weather-pad {
+    width: 230px;
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .weather-info {
+      width: 230px;
+      height: 247px;
+      background-color: #FBFBFB;
+      box-shadow: 4px 0px 20px rgba(0, 0, 0, 0.25);
+      border-radius: 30px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-sizing: border-box;
+      padding: 0 18px;
+      .weather-icon {
+        width: 120px;
+        height: 120px;
+        margin-top: -70px;
+      }
+      .info-wrap {
+        width: 100%;
+        height: 180px;
+        box-sizing: border-box;
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p.location {
+          font-family: 'Alegreya Sans';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 24px;
+        }
+        .info-content {
+          display: flex;
+          width: 100%;
+          margin-top: 20px;
+          .tmp-content {
+            flex-basis: 65px;
+            display: flex;
+            flex-direction: column;
+            .now-tmp {
+              font-family: 'Alegreya Sans';
+              font-style: normal;
+              font-weight: 700;
+              font-size: 64px;
+              line-height: 64px;
+              display: flex;
+              sup {
+                font-family: 'Alegreya Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 14px;
+                margin-top: 9px;
+              }
+            }
+            .now-date {
+              font-family: 'Alegreya Sans';
+              font-style: normal;
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 17px;
+              color: rgba(51, 40, 33, 0.5);
+            }
+          }
+          .windy-cloudy {
+            flex:1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            color: #ffffff;
+            box-sizing: border-box;
+            padding-top: 10px;
+            .windy {
+              width: 70px;
+              line-height: 16px;
+              text-align: center;
+              border-radius: 20px;
+              background: rgba(212, 66, 111, 0.5);
+              font-size: 10px;
+              line-height: 16px;
+            }
+            .cloudy {
+              width: 50px;
+              line-height: 16px;
+              text-align: center;
+              border-radius: 20px;
+              background: rgba(106, 117, 186, 0.5);
+              font-size: 10px;
+              line-height: 16px;
+            }
+          }
+        }
+      }
+      .detail-link {
+        background: #5E4FC1;
+        border-radius: 18px;
+        text-decoration: none;
+        color: #ffffff;
+        display: block;
+        width: 163px;
+        line-height: 47px;
+        text-align: center;
+        position: absolute;
+        bottom: -30px;
+        font-weight: 700;
+        font-size: 14px;
+      }
+    }
+    .details {
+      width: 165px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 38px;
+      .detail {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 12px;
+        .icon {
+          flex-basis: 24px;
+          height: 24px;       
+        }
+        .detail-title {
+          flex-basis: 55px;
+          padding-left: 15px;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 22px;
+          color: #ffffff;
+        }
+        .detail-value {
+          flex: 1;
+          text-align: right;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 22px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

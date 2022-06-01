@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import {HashRouter, Redirect, Route, Switch} from "react-router-dom";
+import routes from "./routes/routes";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <HashRouter>
+        <Switch> 
+            <Route path='/' exact render={() => (
+                <Redirect to="/main"/>
+            )}/>
+            {routes.map((route, index) => (
+                <Route
+                    key={index}
+                    path={route.path}
+                    exact={route.exact}
+                    render={() => {
+                        if(route.meta.title){
+                            document.title = route.meta.title
+                        }
+                        return <route.component/>
+                    }}
+
+                />
+            ))}
+        </Switch>
+      </HashRouter>
+  )
+};
 
 export default App;

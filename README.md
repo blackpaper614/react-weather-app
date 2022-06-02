@@ -5,7 +5,7 @@
 
 
 ### 地址
-[https://blackpaper614.github.io/react-weather-app](https://blackpaper614.github.io/react-weather-app)
+请在web浏览器中打开 [https://blackpaper614.github.io/react-weather-app](https://blackpaper614.github.io/react-weather-app)
 
 ### 使用说明
 - git clone项目代码到本地

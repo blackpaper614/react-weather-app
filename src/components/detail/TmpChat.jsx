@@ -78,7 +78,7 @@ function TmpChat({ data }) {
     <div className="tmp-chart">
       <div id="chart-days">
         <ReactEcharts option={option} />
-      </div>
+      </div> 
       <div className="three-days">
         {list.map((item, index) => (
           <div className="single-day" key={index}>

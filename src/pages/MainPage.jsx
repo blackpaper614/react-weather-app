@@ -1,4 +1,4 @@
-import React, { useCallback, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 // 引入组件
 import Header from "../components/Header";
 import WeatherPad from "../components/WeatherPad";
@@ -20,14 +20,14 @@ function MainPage() {
   }, []);
 
   // 获取当前天气信息
-  const fetchData = useCallback(async () => {
+  const fetchData = async () => {
     const data = await fetchWeather();
     if (data && data.now) {
       setWeather({ ...data.now });
       // 返回数据存入缓存
       localStorage.setItem("CurrentWeather", JSON.stringify(data.now));
     }
-  });
+  };
 
   return (
     <div className="main-content">

@@ -3,8 +3,8 @@
   flex-direction: column;
   align-items: center;
   width: 375px;
-  padding: 50px 16px 0px;
-  height: 90vh;
+  padding: 50px 16px 100px;
+  height: 100vh;
   overflow-y: scroll;
   box-sizing: border-box;
   border: 1px solid #ffffff;
@@ -26,7 +26,7 @@
     height: 64px;
     background-color: #ffffff;
     border-radius: 20px;
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     padding: 13px 34px;
     display: flex;

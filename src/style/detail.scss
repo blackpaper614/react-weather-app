@@ -4,7 +4,7 @@
   align-items: center;
   width: 375px;
   padding-top: 70px;
-  height: 90vh;
+  height: 100vh;
   overflow-y: scroll;
   box-sizing: border-box;
   border: 1px solid #ffffff;
@@ -57,7 +57,7 @@
     }
     .details {
       display: flex;
-      margin-top: 15px;
+      margin-top: 20px;
       justify-content: space-between;
       .detail {
         box-sizing: border-box;
@@ -91,6 +91,7 @@
   .tmp-chart {
     width: 100%;
     height: 250px;
+    margin-top: 10px;
     #chart-days {
       width: 375px;
       height: 110px;

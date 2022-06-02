@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import NavIcon from '../assets/pics/nav-icon.png';
+// 引入图片资源
+import NavIcon from "../assets/pics/nav-icon.png";
 
 function MenuBar({}) {
   return (

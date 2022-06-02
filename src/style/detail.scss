@@ -12,7 +12,7 @@
   position: relative;
   background-color: #ffffff;
   .forecast-info {
-    height: 338px;
+    height: 300px;
     width: 100%;
     padding: 0 22px;
     box-sizing: border-box;
@@ -22,18 +22,18 @@
     .arrow {
       width: 20px;
       height: 17px;
+      cursor: pointer;
     }
     .weather-pic {
       position: absolute;
       top: -30px;
-      right: 0;
+      right: 20px;
       width: 100px;
       height: 100px;
     }
     .location {
       margin-top: 44px;
       p {
-         
         font-style: normal;
         font-weight: 700;
         font-size: 30px;
@@ -41,20 +41,18 @@
       }
     }
     .now-tmp {
-       
       font-style: normal;
       font-weight: 700;
       font-size: 64px;
       line-height: 64px;
       display: flex;
-      margin-top: 30px;
+      margin-top: 20px;
       sup {
-         
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
         line-height: 14px;
-        margin-top: 9px;
+        margin-top: 17px;
       }
     }
     .details {
@@ -77,15 +75,15 @@
         }
         &.rain {
           background-color: rgba(101, 142, 217, 0.1);
-          color: #658ED9;
+          color: #658ed9;
         }
         &.humidity {
           background-color: rgba(216, 97, 145, 0.1);
-          color: #D86191;
+          color: #d86191;
         }
         &.wind {
           background-color: rgba(94, 79, 193, 0.1);
-          color: #5E4FC1;
+          color: #5e4fc1;
         }
       }
     }
@@ -93,6 +91,11 @@
   .tmp-chart {
     width: 100%;
     height: 250px;
+    #chart-days {
+      width: 375px;
+      height: 110px;
+      overflow: hidden;
+    }
     .three-days {
       display: flex;
       justify-content: space-evenly;
@@ -107,7 +110,6 @@
           box-shadow: 0px 15px 10px #ececec;
         }
         .now-tmp {
-           
           font-style: normal;
           font-weight: 700;
           font-size: 36px;
@@ -115,16 +117,14 @@
           display: flex;
           margin-top: 30px;
           sup {
-             
             font-style: normal;
             font-weight: 500;
             font-size: 13px;
             line-height: 14px;
-            margin-top: 9px;
+            margin-top: 12px;
           }
         }
         .now-date {
-           
           font-style: normal;
           font-weight: 500;
           font-size: 14px;
@@ -136,11 +136,11 @@
     }
   }
   .future-list {
-      width: 100%;
-      padding: 0 20px;
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
     .single-day {
       display: flex;
       justify-content: space-between;
@@ -171,10 +171,10 @@
             font-weight: 500;
             font-size: 10px;
             line-height: 12px;
-            margin-top: 2px;
+            margin-top: 5px;
           }
           &.low {
-            color:rgba(51, 40, 33, 0.5);
+            color: rgba(51, 40, 33, 0.5);
             margin-left: 10px;
           }
         }

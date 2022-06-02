@@ -1,4 +1,4 @@
-import React, { useCallback, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 // 引入组件
 import ForecastInfo from "../components/detail/ForecastInfo";
 import FutureList from "../components/detail/FutureList";
@@ -21,12 +21,12 @@ function Detail() {
   }, []);
 
   // 请求未来三天天气列表
-  const fetchForecast = useCallback(async () => {
+  const fetchForecast = async() => {
     const data = await fetchWeather("3d");
     setDailyWeather(data.daily);
     if (data.daily)
       localStorage.setItem("DailyWeather", JSON.stringify(data.daily));
-  });
+  };
 
   return (
     <div className="detail-content">

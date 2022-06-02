@@ -13,6 +13,8 @@ jobs:
 
       # 安装依赖
       - run: npm ci
+      
+      export CI=false
 
       # 打包
       - run: npm run build

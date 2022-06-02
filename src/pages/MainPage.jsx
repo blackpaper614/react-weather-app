@@ -20,7 +20,7 @@ function MainPage() {
   }, []);
 
   // 获取当前天气信息
-  const fetchData = async () => {
+  const fetchData = async() => {
     const data = await fetchWeather();
     if (data && data.now) {
       setWeather({ ...data.now });
